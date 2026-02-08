@@ -4,7 +4,7 @@
 
 This index provides quick navigation to all policies, guidelines, and best practices for cost-efficient, secure, and compliant AI application development.
 
-**Total Documentation:** 12,598 lines across 11 comprehensive documents
+**Total Documentation:** 14,952 lines across 12 comprehensive documents
 
 ---
 
@@ -17,6 +17,7 @@ This index provides quick navigation to all policies, guidelines, and best pract
 | [System Architecture](SYSTEM_ARCHITECTURE.md) | 1,587 | 62KB | System design, microservices, AI Gateway |
 | [AI Development](AI_DEVELOPMENT.md) | 1,762 | 68KB | Development workflow, Git, deployment, team collaboration |
 | [AI Testing Architecture](AI_TESTING_ARCHITECTURE.md) | 2,153 | 84KB | Testing infrastructure, mocks, CI/CD, A/B testing |
+| [Observability Architecture](OBSERVABILITY_ARCHITECTURE.md) | 2,354 | 92KB | Monitoring infrastructure, logging, metrics, tracing, cost tracking |
 | [Cost Reduction](COST_REDUCTION_RULES.md) | 516 | 13KB | Token optimization, caching, model selection |
 | [Observability](OBSERVABILITY.md) | 1,014 | 33KB | Monitoring, logging, metrics, alerting |
 | [Security](SECURITY.md) | 1,218 | 35KB | Input validation, PII protection, incident response |
@@ -226,6 +227,15 @@ This index provides quick navigation to all policies, guidelines, and best pract
 - [Alerting System](OBSERVABILITY.md#4-alerting-system)
 - [Cost Analysis Queries](OBSERVABILITY.md#9-cost-analysis-queries)
 
+### Observability Architecture
+- [Three Pillars Architecture](OBSERVABILITY_ARCHITECTURE.md#11-three-pillars-architecture)
+- [Logging Architecture](OBSERVABILITY_ARCHITECTURE.md#2-logging-architecture)
+- [Metrics Collection](OBSERVABILITY_ARCHITECTURE.md#3-metrics-collection-architecture)
+- [Distributed Tracing](OBSERVABILITY_ARCHITECTURE.md#4-distributed-tracing-architecture)
+- [Cost Tracking Infrastructure](OBSERVABILITY_ARCHITECTURE.md#5-cost-tracking-architecture)
+- [Alerting System](OBSERVABILITY_ARCHITECTURE.md#6-alerting-system-architecture)
+- [Dashboard Design](OBSERVABILITY_ARCHITECTURE.md#7-dashboard-and-visualization-architecture)
+
 ### Integration
 - [API Design](INTEGRATION.md#3-api-design-best-practices)
 - [SDK Integration](INTEGRATION.md#2-sdk-integration-patterns)
@@ -352,6 +362,17 @@ Full details: [Compliance - Section 1](COMPLIANCE.md#1-regulatory-frameworks)
 - [CI/CD Workflow](AI_TESTING_ARCHITECTURE.md#42-github-actions-workflow-architecture)
 - [A/B Testing Framework](AI_TESTING_ARCHITECTURE.md#71-ab-testing-framework)
 
+### Observability Infrastructure
+- [Structured Logger](OBSERVABILITY_ARCHITECTURE.md#21-structured-logging-pipeline)
+- [Fluentd Configuration](OBSERVABILITY_ARCHITECTURE.md#22-log-aggregation-architecture)
+- [Log Lifecycle Manager](OBSERVABILITY_ARCHITECTURE.md#23-log-retention-strategy)
+- [Prometheus Metrics](OBSERVABILITY_ARCHITECTURE.md#32-prometheus-instrumentation)
+- [Custom Metrics Exporter](OBSERVABILITY_ARCHITECTURE.md#33-custom-metrics-exporter)
+- [OpenTelemetry Tracing](OBSERVABILITY_ARCHITECTURE.md#41-tracing-for-ai-workflows)
+- [Cost Tracker](OBSERVABILITY_ARCHITECTURE.md#51-real-time-cost-tracking)
+- [Alert Handler](OBSERVABILITY_ARCHITECTURE.md#62-alert-response-automation)
+- [Dashboard Builder](OBSERVABILITY_ARCHITECTURE.md#73-custom-dashboard-builder)
+
 ---
 
 ## 📊 Reference Tables
@@ -469,6 +490,13 @@ Full details: [Compliance - Section 1](COMPLIANCE.md#1-regulatory-frameworks)
 4. **Isolate test environments** (independent, repeatable)
 5. **Fast feedback loop** (unit tests < 2 min)
 
+### Observability Architecture
+1. **Measure everything** (cost, performance, quality, security)
+2. **Correlate signals** (request ID across logs/metrics/traces)
+3. **Actionable alerts** (clear thresholds, automated response)
+4. **Track costs real-time** (per user, per model, forecasting)
+5. **Low overhead** (sampling, async, batching)
+
 ---
 
 ## 🔗 External Resources
@@ -491,7 +519,7 @@ For questions, issues, or contributions:
 
 ---
 
-**Version:** 1.2
+**Version:** 1.3
 **Last Updated:** February 6, 2026
-**Total Lines:** 12,598 across 11 documents
+**Total Lines:** 14,952 across 12 documents
 **Status:** Active

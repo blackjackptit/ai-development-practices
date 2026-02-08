@@ -6,7 +6,7 @@ A complete collection of practical policies, rules, and best practices for devel
 
 ## Overview
 
-12,598 lines of comprehensive policies across 11 documents covering architecture, development workflow, testing infrastructure, cost optimization, observability, security, compliance, integration, and testing.
+14,952 lines of comprehensive policies across 12 documents covering architecture, development workflow, testing infrastructure, observability architecture, cost optimization, monitoring, security, compliance, integration, and testing.
 
 ## Documents
 
@@ -23,6 +23,7 @@ A complete collection of practical policies, rules, and best practices for devel
 
 ### Observability
 - **[Observability Guide](OBSERVABILITY.md)** - Complete monitoring, logging, metrics, and alerting strategies for AI applications
+- **[Observability Architecture](OBSERVABILITY_ARCHITECTURE.md)** - Observability infrastructure and architecture: logging pipelines, metrics collection, distributed tracing, cost tracking, alerting systems, and dashboard design
 
 ### Security
 - **[Security Guide](SECURITY.md)** - Comprehensive security practices including input validation, prompt injection prevention, PII protection, and incident response
