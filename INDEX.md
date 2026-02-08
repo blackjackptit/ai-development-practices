@@ -4,7 +4,7 @@
 
 This index provides quick navigation to all policies, guidelines, and best practices for cost-efficient, secure, and compliant AI application development.
 
-**Total Documentation:** 10,445 lines across 10 comprehensive documents
+**Total Documentation:** 12,598 lines across 11 comprehensive documents
 
 ---
 
@@ -16,6 +16,7 @@ This index provides quick navigation to all policies, guidelines, and best pract
 | [Cost-Efficient Architecture](COST_EFFICIENT_ARCHITECTURE.md) | 722 | 28KB | Cost optimization, deterministic logic |
 | [System Architecture](SYSTEM_ARCHITECTURE.md) | 1,587 | 62KB | System design, microservices, AI Gateway |
 | [AI Development](AI_DEVELOPMENT.md) | 1,762 | 68KB | Development workflow, Git, deployment, team collaboration |
+| [AI Testing Architecture](AI_TESTING_ARCHITECTURE.md) | 2,153 | 84KB | Testing infrastructure, mocks, CI/CD, A/B testing |
 | [Cost Reduction](COST_REDUCTION_RULES.md) | 516 | 13KB | Token optimization, caching, model selection |
 | [Observability](OBSERVABILITY.md) | 1,014 | 33KB | Monitoring, logging, metrics, alerting |
 | [Security](SECURITY.md) | 1,218 | 35KB | Input validation, PII protection, incident response |
@@ -240,6 +241,16 @@ This index provides quick navigation to all policies, guidelines, and best pract
 - [Load Testing](TESTING.md#7-load-and-performance-testing)
 - [CI/CD](TESTING.md#10-cicd-integration)
 
+### Testing Architecture
+- [Layered Testing Architecture](AI_TESTING_ARCHITECTURE.md#11-layered-testing-architecture)
+- [Mock and Stub Infrastructure](AI_TESTING_ARCHITECTURE.md#2-mock-and-stub-infrastructure)
+- [Test Data Management](AI_TESTING_ARCHITECTURE.md#3-test-data-management-architecture)
+- [CI/CD Pipeline Architecture](AI_TESTING_ARCHITECTURE.md#4-cicd-pipeline-architecture)
+- [Testing Environments](AI_TESTING_ARCHITECTURE.md#5-testing-environments-architecture)
+- [Performance Testing](AI_TESTING_ARCHITECTURE.md#6-performance-testing-architecture)
+- [A/B Testing Framework](AI_TESTING_ARCHITECTURE.md#7-ab-testing-architecture)
+- [Testing Observability](AI_TESTING_ARCHITECTURE.md#8-testing-observability)
+
 ### Development Workflow
 - [Environment Setup](AI_DEVELOPMENT.md#1-development-environment-setup)
 - [Project Structure](AI_DEVELOPMENT.md#2-project-structure)
@@ -330,6 +341,16 @@ Full details: [Compliance - Section 1](COMPLIANCE.md#1-regulatory-frameworks)
 - [Deployment Script](AI_DEVELOPMENT.md#64-deployment-scripts)
 - [Smoke Test Script](AI_DEVELOPMENT.md#64-deployment-scripts)
 - [ADR Template](AI_DEVELOPMENT.md#73-knowledge-sharing)
+
+### Testing Infrastructure
+- [LLM Mock Server](AI_TESTING_ARCHITECTURE.md#21-llm-mock-server-architecture)
+- [Provider Simulator](AI_TESTING_ARCHITECTURE.md#22-provider-simulator-architecture)
+- [Response Recorder](AI_TESTING_ARCHITECTURE.md#23-response-recording-architecture)
+- [Test Data Factory](AI_TESTING_ARCHITECTURE.md#31-test-data-generation)
+- [Database Seeder](AI_TESTING_ARCHITECTURE.md#32-test-database-seeding)
+- [Prompt Test Corpus](AI_TESTING_ARCHITECTURE.md#33-prompt-test-corpus)
+- [CI/CD Workflow](AI_TESTING_ARCHITECTURE.md#42-github-actions-workflow-architecture)
+- [A/B Testing Framework](AI_TESTING_ARCHITECTURE.md#71-ab-testing-framework)
 
 ---
 
@@ -441,6 +462,13 @@ Full details: [Compliance - Section 1](COMPLIANCE.md#1-regulatory-frameworks)
 4. **Measure performance** (latency, tokens, cost)
 5. **Run CI/CD** (automated tests on every PR)
 
+### Testing Architecture
+1. **Layer tests properly** (80% unit, 15% integration, 5% E2E)
+2. **Mock by default** (real LLM only for E2E)
+3. **Track test costs** (stay within budget)
+4. **Isolate test environments** (independent, repeatable)
+5. **Fast feedback loop** (unit tests < 2 min)
+
 ---
 
 ## 🔗 External Resources
@@ -463,7 +491,7 @@ For questions, issues, or contributions:
 
 ---
 
-**Version:** 1.1
+**Version:** 1.2
 **Last Updated:** February 6, 2026
-**Total Lines:** 10,445 across 10 documents
+**Total Lines:** 12,598 across 11 documents
 **Status:** Active

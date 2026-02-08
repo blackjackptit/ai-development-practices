@@ -6,7 +6,7 @@ A complete collection of practical policies, rules, and best practices for devel
 
 ## Overview
 
-10,445 lines of comprehensive policies across 10 documents covering architecture, development workflow, cost optimization, observability, security, compliance, integration, and testing.
+12,598 lines of comprehensive policies across 11 documents covering architecture, development workflow, testing infrastructure, cost optimization, observability, security, compliance, integration, and testing.
 
 ## Documents
 
@@ -35,6 +35,7 @@ A complete collection of practical policies, rules, and best practices for devel
 
 ### Testing
 - **[Testing Guide](TESTING.md)** - Comprehensive testing strategies for AI applications: unit tests, integration tests, prompt testing, model evaluation, and CI/CD
+- **[AI Testing Architecture](AI_TESTING_ARCHITECTURE.md)** - Testing infrastructure and architecture: mock servers, test data management, CI/CD pipelines, A/B testing framework, and testing observability
 
 ## Quick Start
 
