@@ -27,6 +27,7 @@ A complete collection of practical policies, rules, and best practices for devel
 
 ### Integration
 - **[Integration Guide](INTEGRATION.md)** - Practical patterns for integrating AI into applications: APIs, SDKs, webhooks, caching, batch processing, and client libraries
+- **[Integration Architecture](INTEGRATION_ARCHITECTURE.md)** - System architecture for AI integration: layered architecture, microservices, data flow, scalability, and AI Gateway patterns
 
 ### Testing
 - **[Testing Guide](TESTING.md)** - Comprehensive testing strategies for AI applications: unit tests, integration tests, prompt testing, model evaluation, and CI/CD
