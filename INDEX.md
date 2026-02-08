@@ -4,7 +4,7 @@
 
 This index provides quick navigation to all policies, guidelines, and best practices for cost-efficient, secure, and compliant AI application development.
 
-**Total Documentation:** 5,968 lines across 7 comprehensive guides
+**Total Documentation:** 10,445 lines across 10 comprehensive documents
 
 ---
 
@@ -12,7 +12,10 @@ This index provides quick navigation to all policies, guidelines, and best pract
 
 | Document | Lines | Size | Focus Area |
 |----------|-------|------|------------|
-| [Architecture](ARCHITECTURE.md) | 722 | 28KB | System design, deterministic logic, cost-aware patterns |
+| [Architecture Guide](ARCHITECTURE.md) | 192 | 8KB | Architecture navigation hub |
+| [Cost-Efficient Architecture](COST_EFFICIENT_ARCHITECTURE.md) | 722 | 28KB | Cost optimization, deterministic logic |
+| [System Architecture](SYSTEM_ARCHITECTURE.md) | 1,587 | 62KB | System design, microservices, AI Gateway |
+| [AI Development](AI_DEVELOPMENT.md) | 1,762 | 68KB | Development workflow, Git, deployment, team collaboration |
 | [Cost Reduction](COST_REDUCTION_RULES.md) | 516 | 13KB | Token optimization, caching, model selection |
 | [Observability](OBSERVABILITY.md) | 1,014 | 33KB | Monitoring, logging, metrics, alerting |
 | [Security](SECURITY.md) | 1,218 | 35KB | Input validation, PII protection, incident response |
@@ -25,11 +28,12 @@ This index provides quick navigation to all policies, guidelines, and best pract
 ## 🎯 Quick Start Guides
 
 ### For New Projects
-1. Read [Architecture](ARCHITECTURE.md#1-layered-decision-architecture) - Understand the cost-aware pipeline
-2. Review [Cost Reduction Rules](COST_REDUCTION_RULES.md#rule-71-use-deterministic-logic-first--critical) - Learn when NOT to use LLMs
-3. Set up [Security](SECURITY.md#2-input-validation-and-sanitization) - Implement input validation
-4. Plan [Observability](OBSERVABILITY.md#1-key-metrics-to-track) - Set up metrics tracking
-5. Check [Compliance](COMPLIANCE.md#10-compliance-checklist) - Ensure regulatory compliance
+1. Setup [Development Environment](AI_DEVELOPMENT.md#1-development-environment-setup) - Get your workspace ready
+2. Read [Architecture](ARCHITECTURE.md) - Understand the cost-aware pipeline and system design
+3. Review [Cost Reduction Rules](COST_REDUCTION_RULES.md#rule-71-use-deterministic-logic-first--critical) - Learn when NOT to use LLMs
+4. Set up [Security](SECURITY.md#2-input-validation-and-sanitization) - Implement input validation
+5. Plan [Observability](OBSERVABILITY.md#1-key-metrics-to-track) - Set up metrics tracking
+6. Check [Compliance](COMPLIANCE.md#10-compliance-checklist) - Ensure regulatory compliance
 
 ### For Existing Projects
 1. Run [Security Audit](SECURITY.md#11-security-checklist) - 40+ security checks
@@ -41,6 +45,25 @@ This index provides quick navigation to all policies, guidelines, and best pract
 ---
 
 ## 📋 Complete Checklists
+
+### Development Workflow (15 items)
+- [ ] Development environment set up (Python, Git, Docker)
+- [ ] Virtual environment created and activated
+- [ ] Environment variables configured (.env file)
+- [ ] Pre-commit hooks installed
+- [ ] IDE configured with linters (black, flake8)
+- [ ] Tests passing locally
+- [ ] Follow Git branching strategy (feature/bugfix branches)
+- [ ] Write meaningful commit messages
+- [ ] Keep PRs small (<400 lines)
+- [ ] Self-review before requesting review
+- [ ] All tests pass in CI
+- [ ] Code reviewed and approved
+- [ ] Documentation updated
+- [ ] Deployed to staging first
+- [ ] Monitor after production deployment
+
+**Full checklist:** [AI Development - Section 10](AI_DEVELOPMENT.md#10-development-checklist)
 
 ### Cost Optimization (12 items)
 - [ ] Use Haiku/GPT-3.5 for simple tasks
@@ -217,6 +240,15 @@ This index provides quick navigation to all policies, guidelines, and best pract
 - [Load Testing](TESTING.md#7-load-and-performance-testing)
 - [CI/CD](TESTING.md#10-cicd-integration)
 
+### Development Workflow
+- [Environment Setup](AI_DEVELOPMENT.md#1-development-environment-setup)
+- [Project Structure](AI_DEVELOPMENT.md#2-project-structure)
+- [Git Workflow](AI_DEVELOPMENT.md#3-git-workflow)
+- [Development Best Practices](AI_DEVELOPMENT.md#4-development-best-practices)
+- [Code Review Process](AI_DEVELOPMENT.md#34-code-review-checklist)
+- [Deployment Process](AI_DEVELOPMENT.md#6-deployment-process)
+- [Team Collaboration](AI_DEVELOPMENT.md#7-team-collaboration)
+
 ---
 
 ## 💡 Key Concepts
@@ -291,6 +323,14 @@ Full details: [Compliance - Section 1](COMPLIANCE.md#1-regulatory-frameworks)
 - [Pre-commit Hooks](TESTING.md#102-pre-commit-hooks)
 - [Grafana Dashboard](OBSERVABILITY.md#8-sample-grafana-dashboard-json)
 
+### Development Workflow
+- [Project Structure](AI_DEVELOPMENT.md#21-recommended-directory-layout)
+- [Configuration Management](AI_DEVELOPMENT.md#22-configuration-management)
+- [Dependency Injection Example](AI_DEVELOPMENT.md#23-code-organization-principles)
+- [Deployment Script](AI_DEVELOPMENT.md#64-deployment-scripts)
+- [Smoke Test Script](AI_DEVELOPMENT.md#64-deployment-scripts)
+- [ADR Template](AI_DEVELOPMENT.md#73-knowledge-sharing)
+
 ---
 
 ## 📊 Reference Tables
@@ -359,6 +399,13 @@ Full details: [Compliance - Section 1](COMPLIANCE.md#1-regulatory-frameworks)
 
 ## 📖 Best Practices Summary
 
+### Development Workflow
+1. **Set up properly** (venv, pre-commit hooks, IDE linters)
+2. **Follow Git conventions** (feature branches, meaningful commits)
+3. **Test before committing** (unit tests, integration tests)
+4. **Keep PRs small** (<400 lines, focused changes)
+5. **Deploy to staging first** (verify before production)
+
 ### Cost Efficiency
 1. **Always try deterministic logic first** (regex, libraries, rules)
 2. **Start with cheapest model** (Haiku/GPT-3.5), upgrade only if needed
@@ -416,7 +463,7 @@ For questions, issues, or contributions:
 
 ---
 
-**Version:** 1.0
-**Last Updated:** February 9, 2026
-**Total Lines:** 5,968 across 7 guides
+**Version:** 1.1
+**Last Updated:** February 6, 2026
+**Total Lines:** 10,445 across 10 documents
 **Status:** Active

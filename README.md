@@ -6,7 +6,7 @@ A complete collection of practical policies, rules, and best practices for devel
 
 ## Overview
 
-5,968 lines of comprehensive policies across 7 guides covering architecture, cost optimization, observability, security, compliance, integration, and testing.
+10,445 lines of comprehensive policies across 10 documents covering architecture, development workflow, cost optimization, observability, security, compliance, integration, and testing.
 
 ## Documents
 
@@ -14,6 +14,9 @@ A complete collection of practical policies, rules, and best practices for devel
 - **[Architecture Guide](ARCHITECTURE.md)** - Complete architecture overview and navigation
   - [Cost-Efficient Architecture](COST_EFFICIENT_ARCHITECTURE.md) - Layered decision architecture, deterministic logic, cost optimization patterns
   - [System Architecture](SYSTEM_ARCHITECTURE.md) - System integration, microservices, AI Gateway, scalability, and HA patterns
+
+### Development Workflow
+- **[AI Development Guide](AI_DEVELOPMENT.md)** - Complete development lifecycle: environment setup, Git workflow, testing, deployment, team collaboration, and best practices
 
 ### Cost Management
 - **[Cost Reduction Rules](COST_REDUCTION_RULES.md)** - Comprehensive guidelines for minimizing AI development costs while maintaining quality
@@ -68,4 +71,4 @@ Add new policies and guidelines as separate markdown documents and update this R
 ---
 
 **Project Status:** Active
-**Last Updated:** February 8, 2026
+**Last Updated:** February 6, 2026
