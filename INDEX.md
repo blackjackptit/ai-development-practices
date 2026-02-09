@@ -4,7 +4,7 @@
 
 This index provides quick navigation to all policies, guidelines, and best practices for cost-efficient, secure, and compliant AI application development.
 
-**Total Documentation:** 16,021 lines across 13 comprehensive documents
+**Total Documentation:** 18,106 lines across 14 comprehensive documents
 
 ---
 
@@ -18,6 +18,7 @@ This index provides quick navigation to all policies, guidelines, and best pract
 | [AI Development](AI_DEVELOPMENT.md) | 1,762 | 68KB | Development workflow, Git, deployment, team collaboration |
 | [AI Testing Architecture](AI_TESTING_ARCHITECTURE.md) | 2,153 | 84KB | Testing infrastructure, mocks, CI/CD, A/B testing |
 | [Observability Architecture](OBSERVABILITY_ARCHITECTURE.md) | 2,354 | 92KB | Monitoring infrastructure, logging, metrics, tracing, cost tracking |
+| [Security Architecture](SECURITY_ARCHITECTURE.md) | 2,085 | 81KB | Security infrastructure, defense in depth, threat detection, incident response |
 | [Metrics Guide](METRICS.md) | 1,069 | 42KB | Complete metrics catalog: cost, performance, quality, usage, security |
 | [Cost Reduction](COST_REDUCTION_RULES.md) | 516 | 13KB | Token optimization, caching, model selection |
 | [Observability](OBSERVABILITY.md) | 1,014 | 33KB | Monitoring, logging, metrics, alerting |
@@ -213,6 +214,15 @@ This index provides quick navigation to all policies, guidelines, and best pract
 - [Output Validation](SECURITY.md#61-output-sanitization)
 - [Incident Response](SECURITY.md#102-incident-response)
 
+### Security Architecture
+- [Defense in Depth](SECURITY_ARCHITECTURE.md#11-defense-in-depth-architecture)
+- [Zero Trust Architecture](SECURITY_ARCHITECTURE.md#12-zero-trust-architecture)
+- [Input Validation Pipeline](SECURITY_ARCHITECTURE.md#2-input-validation-architecture)
+- [Authentication Systems](SECURITY_ARCHITECTURE.md#3-authentication-and-authorization-architecture)
+- [Data Protection](SECURITY_ARCHITECTURE.md#4-data-protection-architecture)
+- [Threat Detection](SECURITY_ARCHITECTURE.md#5-threat-detection-architecture)
+- [Incident Response](SECURITY_ARCHITECTURE.md#6-incident-response-architecture)
+
 ### Compliance
 - [GDPR Implementation](COMPLIANCE.md#21-core-requirements)
 - [CCPA/CPRA](COMPLIANCE.md#3-ccpacpra-compliance-california)
@@ -384,6 +394,18 @@ Full details: [Compliance - Section 1](COMPLIANCE.md#1-regulatory-frameworks)
 - [Alert Handler](OBSERVABILITY_ARCHITECTURE.md#62-alert-response-automation)
 - [Dashboard Builder](OBSERVABILITY_ARCHITECTURE.md#73-custom-dashboard-builder)
 
+### Security Infrastructure
+- [Validation Pipeline](SECURITY_ARCHITECTURE.md#21-multi-layer-validation-pipeline)
+- [Rate Limiter](SECURITY_ARCHITECTURE.md#22-rate-limiting-architecture)
+- [JWT Auth Manager](SECURITY_ARCHITECTURE.md#31-jwt-based-authentication)
+- [API Key Manager](SECURITY_ARCHITECTURE.md#32-api-key-management)
+- [RBAC System](SECURITY_ARCHITECTURE.md#33-role-based-access-control-rbac)
+- [Data Encryption](SECURITY_ARCHITECTURE.md#41-encryption-at-rest)
+- [Secrets Manager](SECURITY_ARCHITECTURE.md#42-secrets-management)
+- [Anomaly Detector](SECURITY_ARCHITECTURE.md#51-anomaly-detection)
+- [Intrusion Detection System](SECURITY_ARCHITECTURE.md#52-intrusion-detection-system-ids)
+- [Incident Responder](SECURITY_ARCHITECTURE.md#61-automated-incident-response)
+
 ---
 
 ## 📊 Reference Tables
@@ -485,6 +507,13 @@ Full metrics catalog: [Metrics Guide](METRICS.md)
 4. **Store API keys securely** (secret managers, not code)
 5. **Implement rate limiting** (per user, per tier)
 
+### Security Architecture
+1. **Defense in depth** (multiple security layers)
+2. **Zero trust** (verify explicitly, least privilege)
+3. **Automate response** (contain threats quickly)
+4. **Monitor threats** (anomaly detection, IDS)
+5. **Encrypt everything** (at rest, in transit)
+
 ### Observability
 1. **Track all costs** (per request, endpoint, user)
 2. **Log with structure** (JSON format, request IDs)
@@ -542,7 +571,7 @@ For questions, issues, or contributions:
 
 ---
 
-**Version:** 1.4
+**Version:** 1.5
 **Last Updated:** February 6, 2026
-**Total Lines:** 16,021 across 13 documents
+**Total Lines:** 18,106 across 14 documents
 **Status:** Active
