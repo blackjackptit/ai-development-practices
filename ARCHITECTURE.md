@@ -4,7 +4,7 @@
 
 This document serves as the central index for all architecture guides in the AI Development Policies collection. Each architecture guide provides deep, implementation-focused guidance for a specific architectural domain.
 
-**Total:** 8 comprehensive architecture documents with 13,700+ lines of architectural guidance, patterns, and complete implementations.
+**Total:** 9 comprehensive architecture documents with 16,200+ lines of architectural guidance, patterns, and complete implementations.
 
 ---
 
@@ -396,6 +396,82 @@ This document serves as the central index for all architecture guides in the AI 
 
 ---
 
+### 9. [Autonomous Agent Architecture](AUTONOMOUS_AGENT_ARCHITECTURE.md)
+**Lines:** 2,500+ | **Size:** 98KB | **Focus:** Building autonomous AI agents
+
+**What's Inside:**
+- Core Agent Components
+  - Agent loop architecture (Perceive → Reason → Decide → Act)
+  - Agent state management
+  - Goal definition and success criteria
+  - Cost and step limits
+- Agent Loop Patterns
+  - ReAct pattern (Reasoning + Acting interleaved)
+  - Plan-and-Execute pattern (plan first, then execute)
+  - Hierarchical task decomposition
+  - Reflection and error correction
+- Tool System Design
+  - Tool interface and registry
+  - Built-in tools (file system, web search, code execution)
+  - Tool safety and sandboxing
+  - Custom tool implementation
+- Memory Architecture
+  - Multi-level memory system
+  - Working memory (recent context, limited capacity)
+  - Episodic memory (past actions and experiences)
+  - Semantic memory (general knowledge)
+  - Long-term memory (vector database for retrieval)
+  - Memory consolidation
+- Planning and Reasoning
+  - Hierarchical task decomposition
+  - Multi-step reasoning
+  - Goal-oriented behavior
+  - Self-reflection
+- Claude CLI Implementation
+  - Native tool use with Claude API
+  - Complete agent implementation
+  - Tool registration and execution
+  - Conversation management
+- Complete Agent Examples
+  - Code analysis agent
+  - Data processing agent
+  - Research and writing agent
+- Multi-Agent Systems
+  - Coordinator-worker pattern
+  - Specialized agent collaboration
+  - Task delegation and synthesis
+- Monitoring and Control
+  - Agent dashboard
+  - Pause/resume/stop controls
+  - Cost and progress tracking
+  - Action history export
+- Best Practices and Safety
+  - Safety checklist
+  - Cost limits and controls
+  - Tool access restrictions
+  - Error handling
+
+**Core Principle:** 🤖 Autonomous agents perceive, reason, decide, and act in a continuous loop to achieve goals
+
+**Key Concepts:**
+- Agent loop: continuous perception-reasoning-action cycle
+- ReAct pattern: interleave thinking and acting
+- Tool use: agents can call external tools and APIs
+- Memory management: multi-level memory for context
+- Goal-oriented: agents work towards specific objectives
+- Cost-aware: track and limit execution costs
+- Safety-first: sandbox tools, limit access, human-in-the-loop
+
+**Use this when:**
+- Building autonomous AI systems
+- Implementing agents with tool use (Claude CLI)
+- Creating multi-step reasoning systems
+- Developing agentic workflows
+- Building AI assistants that can act independently
+- Implementing research, coding, or analysis agents
+
+---
+
 ## 🗺️ Architecture Navigation Map
 
 ### By Role
@@ -422,9 +498,10 @@ This document serves as the central index for all architecture guides in the AI 
 - Monitor: [Observability Architecture](OBSERVABILITY_ARCHITECTURE.md) - Audit logging
 
 **Architects:**
-- Read all 8 documents in order for complete understanding
+- Read all 9 documents in order for complete understanding
 - Start with Clean Architecture for code organization principles
 - Focus on integration points between documents
+- Study Autonomous Agent Architecture for agentic systems
 
 ### By Task
 
@@ -437,6 +514,13 @@ This document serves as the central index for all architecture guides in the AI 
 6. [Observability Architecture](OBSERVABILITY_ARCHITECTURE.md) - Instrument everything
 7. [AI Testing Architecture](AI_TESTING_ARCHITECTURE.md) - Set up testing
 8. [Metrics Guide](METRICS.md) - Define success metrics
+
+**Building autonomous agents:**
+1. [Autonomous Agent Architecture](AUTONOMOUS_AGENT_ARCHITECTURE.md) - Agent loop, tools, memory
+2. [Clean Architecture](CLEAN_ARCHITECTURE.md) - Structure agent code properly
+3. [Cost-Efficient Architecture](COST_EFFICIENT_ARCHITECTURE.md) - Control agent costs
+4. [Security Architecture](SECURITY_ARCHITECTURE.md) - Secure tool access
+5. [Observability Architecture](OBSERVABILITY_ARCHITECTURE.md) - Monitor agent actions
 
 **Optimizing existing system:**
 1. [Metrics Guide](METRICS.md) - Identify bottlenecks
@@ -791,7 +875,7 @@ Includes:
 4. Refer to other documents as needed
 
 ### Building a Production System?
-Read all 8 documents in order:
+Read all 9 documents in order:
 1. Clean Architecture → Organize code with proper layers
 2. Cost-Efficient → Design for cost efficiency
 3. System → Design overall architecture
@@ -800,6 +884,7 @@ Read all 8 documents in order:
 6. Observability → Instrument everything
 7. Testing → Set up test infrastructure
 8. Metrics → Define success metrics
+9. Autonomous Agents → Build agentic systems (if needed)
 
 ### Troubleshooting Existing System?
 1. [Metrics Guide](METRICS.md) - Identify what's wrong
@@ -835,11 +920,12 @@ Read all 8 documents in order:
 | [Compliance](COMPLIANCE_ARCHITECTURE.md) | 1,706 | 66KB | Compliance infrastructure | Consent, DSR, audit logs, data lifecycle |
 | [Metrics](METRICS.md) | 1,069 | 42KB | Metrics catalog | 60+ metrics with formulas and thresholds |
 | [Clean Architecture](CLEAN_ARCHITECTURE.md) | 2,100 | 82KB | Code organization | Entities, use cases, adapters, dependency inversion |
-| **Total** | **13,776** | **537KB** | **All aspects** | **Complete architecture** |
+| [Autonomous Agents](AUTONOMOUS_AGENT_ARCHITECTURE.md) | 2,500 | 98KB | Agent systems | Agent loop, tools, memory, Claude CLI agents |
+| **Total** | **16,276** | **635KB** | **All aspects** | **Complete architecture** |
 
 ---
 
-**Version:** 4.0 (Added Clean Architecture)
+**Version:** 5.0 (Added Autonomous Agent Architecture)
 **Last Updated:** February 6, 2026
-**Total Architecture Guidance:** 13,776 lines across 8 documents
+**Total Architecture Guidance:** 16,276 lines across 9 documents
 **Status:** Active
