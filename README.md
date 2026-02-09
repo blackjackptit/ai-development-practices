@@ -6,7 +6,7 @@ A complete collection of practical policies, rules, and best practices for devel
 
 ## Overview
 
-19,812 lines of comprehensive policies across 16 documents covering architecture, development workflow, testing infrastructure, observability architecture, security architecture, compliance architecture, metrics, cost optimization, monitoring, security, compliance, integration, and testing.
+24,876 lines of comprehensive policies across 18 documents covering architecture, clean architecture, autonomous agents, development workflow, testing infrastructure, observability architecture, security architecture, compliance architecture, metrics, cost optimization, monitoring, security, compliance, integration, and testing.
 
 ### Start Here
 
@@ -18,9 +18,11 @@ A complete collection of practical policies, rules, and best practices for devel
 - **[Quick Reference Guide](QUICK_REFERENCE.md)** ⭐ **START HERE** - Consolidated guide with critical information, code snippets, configuration examples, metrics, emergency procedures, and quick decision matrices from all 15 comprehensive documents
 
 ### Architecture
-- **[Architecture Guide](ARCHITECTURE.md)** - Complete architecture overview and navigation
+- **[Architecture Guide](ARCHITECTURE.md)** - Complete architecture overview and navigation (9 architecture documents)
   - [Cost-Efficient Architecture](COST_EFFICIENT_ARCHITECTURE.md) - Layered decision architecture, deterministic logic, cost optimization patterns
   - [System Architecture](SYSTEM_ARCHITECTURE.md) - System integration, microservices, AI Gateway, scalability, and HA patterns
+  - [Clean Architecture](CLEAN_ARCHITECTURE.md) - Code organization: entities, use cases, adapters, dependency inversion
+  - [Autonomous Agent Architecture](AUTONOMOUS_AGENT_ARCHITECTURE.md) - Agent loops, tools, memory, Claude CLI agents, multi-agent systems
 
 ### Development Workflow
 - **[AI Development Guide](AI_DEVELOPMENT.md)** - Complete development lifecycle: environment setup, Git workflow, testing, deployment, team collaboration, and best practices

@@ -4,7 +4,7 @@
 
 This index provides quick navigation to all policies, guidelines, and best practices for cost-efficient, secure, and compliant AI application development.
 
-**Total Documentation:** 19,812 lines across 16 documents
+**Total Documentation:** 24,876 lines across 18 documents
 
 **⚡ New to AI development? Start with the [Quick Reference Guide](QUICK_REFERENCE.md)**
 
@@ -30,6 +30,8 @@ This index provides quick navigation to all policies, guidelines, and best pract
 | [Compliance](COMPLIANCE.md) | 1,096 | 37KB | GDPR, CCPA, HIPAA, consent management |
 | [Integration](INTEGRATION.md) | 1,173 | 32KB | APIs, SDKs, webhooks, client libraries |
 | [Testing](TESTING.md) | 1,165 | 35KB | Unit, integration, prompt, performance testing |
+| [Clean Architecture](CLEAN_ARCHITECTURE.md) | 2,100 | 82KB | Code organization, entities, use cases, adapters, dependency inversion |
+| [Autonomous Agent Architecture](AUTONOMOUS_AGENT_ARCHITECTURE.md) | 2,500 | 98KB | Agent loop, tools, memory, Claude CLI agents, multi-agent systems |
 
 ---
 
@@ -624,7 +626,7 @@ For questions, issues, or contributions:
 
 ---
 
-**Version:** 1.7
+**Version:** 1.8
 **Last Updated:** February 6, 2026
-**Total Lines:** 19,812 across 16 documents (15 comprehensive + 1 quick reference)
+**Total Lines:** 24,876 across 18 documents (17 comprehensive + 1 quick reference)
 **Status:** Active
