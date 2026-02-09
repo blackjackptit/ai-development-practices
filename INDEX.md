@@ -4,7 +4,7 @@
 
 This index provides quick navigation to all policies, guidelines, and best practices for cost-efficient, secure, and compliant AI application development.
 
-**Total Documentation:** 18,106 lines across 14 comprehensive documents
+**Total Documentation:** 19,812 lines across 15 comprehensive documents
 
 ---
 
@@ -19,6 +19,7 @@ This index provides quick navigation to all policies, guidelines, and best pract
 | [AI Testing Architecture](AI_TESTING_ARCHITECTURE.md) | 2,153 | 84KB | Testing infrastructure, mocks, CI/CD, A/B testing |
 | [Observability Architecture](OBSERVABILITY_ARCHITECTURE.md) | 2,354 | 92KB | Monitoring infrastructure, logging, metrics, tracing, cost tracking |
 | [Security Architecture](SECURITY_ARCHITECTURE.md) | 2,085 | 81KB | Security infrastructure, defense in depth, threat detection, incident response |
+| [Compliance Architecture](COMPLIANCE_ARCHITECTURE.md) | 1,706 | 66KB | Compliance infrastructure, consent management, DSR automation, audit logging |
 | [Metrics Guide](METRICS.md) | 1,069 | 42KB | Complete metrics catalog: cost, performance, quality, usage, security |
 | [Cost Reduction](COST_REDUCTION_RULES.md) | 516 | 13KB | Token optimization, caching, model selection |
 | [Observability](OBSERVABILITY.md) | 1,014 | 33KB | Monitoring, logging, metrics, alerting |
@@ -231,6 +232,15 @@ This index provides quick navigation to all policies, guidelines, and best pract
 - [International Transfers](COMPLIANCE.md#5-international-data-transfers)
 - [Privacy by Design](COMPLIANCE.md#8-privacy-by-design)
 
+### Compliance Architecture
+- [Privacy by Design Architecture](COMPLIANCE_ARCHITECTURE.md#11-privacy-by-design-architecture)
+- [Consent Management System](COMPLIANCE_ARCHITECTURE.md#2-consent-management-architecture)
+- [DSR Automation](COMPLIANCE_ARCHITECTURE.md#3-data-subject-rights-dsr-architecture)
+- [Immutable Audit Logging](COMPLIANCE_ARCHITECTURE.md#4-audit-logging-architecture)
+- [Data Lifecycle Management](COMPLIANCE_ARCHITECTURE.md#5-data-retention-and-deletion-architecture)
+- [Data Residency](COMPLIANCE_ARCHITECTURE.md#6-cross-border-data-transfer-architecture)
+- [Compliance Monitoring](COMPLIANCE_ARCHITECTURE.md#7-compliance-monitoring-and-reporting)
+
 ### Observability
 - [Metrics to Track](OBSERVABILITY.md#1-key-metrics-to-track)
 - [Logging Strategy](OBSERVABILITY.md#2-logging-strategy)
@@ -406,6 +416,15 @@ Full details: [Compliance - Section 1](COMPLIANCE.md#1-regulatory-frameworks)
 - [Intrusion Detection System](SECURITY_ARCHITECTURE.md#52-intrusion-detection-system-ids)
 - [Incident Responder](SECURITY_ARCHITECTURE.md#61-automated-incident-response)
 
+### Compliance Infrastructure
+- [Consent Manager](COMPLIANCE_ARCHITECTURE.md#21-consent-management-system)
+- [Consent Middleware](COMPLIANCE_ARCHITECTURE.md#22-consent-verification-middleware)
+- [DSR Handler](COMPLIANCE_ARCHITECTURE.md#31-automated-dsr-handler)
+- [Immutable Audit Logger](COMPLIANCE_ARCHITECTURE.md#41-immutable-audit-trail)
+- [Data Lifecycle Manager](COMPLIANCE_ARCHITECTURE.md#51-automated-data-lifecycle-management)
+- [Data Residency Manager](COMPLIANCE_ARCHITECTURE.md#61-data-residency-manager)
+- [Compliance Monitor](COMPLIANCE_ARCHITECTURE.md#71-compliance-dashboard)
+
 ---
 
 ## 📊 Reference Tables
@@ -528,6 +547,13 @@ Full metrics catalog: [Metrics Guide](METRICS.md)
 4. **Document processing** (purposes, recipients, retention)
 5. **Sign DPAs** (with all data processors)
 
+### Compliance Architecture
+1. **Privacy by design** (proactive, not reactive)
+2. **Automate DSR** (30-day SLA compliance)
+3. **Immutable audit logs** (tamper-proof, 7-year retention)
+4. **Data lifecycle automation** (retention, deletion, anonymization)
+5. **Data residency** (GDPR-compliant transfers)
+
 ### Testing
 1. **Mock LLM in unit tests** (fast, deterministic)
 2. **Test with real APIs** (integration tests only)
@@ -571,7 +597,7 @@ For questions, issues, or contributions:
 
 ---
 
-**Version:** 1.5
+**Version:** 1.6
 **Last Updated:** February 6, 2026
-**Total Lines:** 18,106 across 14 documents
+**Total Lines:** 19,812 across 15 documents
 **Status:** Active

@@ -6,7 +6,7 @@ A complete collection of practical policies, rules, and best practices for devel
 
 ## Overview
 
-18,106 lines of comprehensive policies across 14 documents covering architecture, development workflow, testing infrastructure, observability architecture, security architecture, metrics, cost optimization, monitoring, security, compliance, integration, and testing.
+19,812 lines of comprehensive policies across 15 documents covering architecture, development workflow, testing infrastructure, observability architecture, security architecture, compliance architecture, metrics, cost optimization, monitoring, security, compliance, integration, and testing.
 
 ## Documents
 
@@ -32,6 +32,7 @@ A complete collection of practical policies, rules, and best practices for devel
 
 ### Compliance
 - **[Compliance Guide](COMPLIANCE.md)** - Regulatory compliance including GDPR, CCPA, HIPAA, consent management, and data protection requirements
+- **[Compliance Architecture](COMPLIANCE_ARCHITECTURE.md)** - Compliance infrastructure and architecture: privacy by design, consent management, DSR automation, immutable audit logging, data lifecycle management, and cross-border data transfers
 
 ### Integration
 - **[Integration Guide](INTEGRATION.md)** - Practical integration patterns and code examples: APIs, SDKs, webhooks, caching, batch processing, and client libraries
