@@ -4,7 +4,7 @@
 
 This document serves as the central index for all architecture guides in the AI Development Policies collection. Each architecture guide provides deep, implementation-focused guidance for a specific architectural domain.
 
-**Total:** 7 comprehensive architecture documents with 11,000+ lines of architectural guidance, patterns, and complete implementations.
+**Total:** 8 comprehensive architecture documents with 13,700+ lines of architectural guidance, patterns, and complete implementations.
 
 ---
 
@@ -340,12 +340,69 @@ This document serves as the central index for all architecture guides in the AI 
 
 ---
 
+### 8. [Clean Architecture](CLEAN_ARCHITECTURE.md)
+**Lines:** 2,100+ | **Size:** 82KB | **Focus:** Code organization and maintainability
+
+**What's Inside:**
+- Four Layers Architecture
+  - Layer 1: Entities (enterprise business rules)
+  - Layer 2: Use Cases (application business rules)
+  - Layer 3: Interface Adapters (controllers, gateways, presenters)
+  - Layer 4: Frameworks & Drivers (external dependencies)
+- Dependency Rule (dependencies flow inward only)
+- Dependency Inversion Principle
+  - Inner layers define interfaces
+  - Outer layers implement interfaces
+  - Easy to swap implementations (LLM providers, databases)
+- Complete Implementation Example
+  - Project structure for AI applications
+  - Entity examples (User, Conversation, Message, TokenCount)
+  - Use case examples (GenerateSummary, CostAwareGeneration)
+  - Adapter examples (Anthropic, OpenAI, PostgreSQL, Redis)
+  - Multi-provider gateway with fallback
+- AI-Specific Patterns
+  - Cost-aware use cases
+  - Prompt template entities
+  - Deterministic-first processing
+- Testing Strategy
+  - Test doubles and mocks
+  - Unit test entities (pure business logic)
+  - Unit test use cases (with mocked dependencies)
+  - Integration test adapters (real APIs)
+- Integration with Other Architectures
+  - Clean + Cost-Efficient (cost-aware pipeline)
+  - Clean + Security (validation pipeline)
+  - Clean + Compliance (consent verification)
+- Migration Guide (from monolith to Clean Architecture)
+- Best Practices and Anti-Patterns
+
+**Core Principle:** 🎯 Dependencies flow inward - inner layers know nothing about outer layers
+
+**Key Concepts:**
+- Separation of concerns (business logic vs. frameworks)
+- Testability without external dependencies
+- Easy to swap LLM providers (Anthropic → OpenAI)
+- Business rules in entities, application logic in use cases
+- Framework-agnostic use cases
+- Dependency injection for all external dependencies
+
+**Use this when:**
+- Starting new AI project (greenfield)
+- Refactoring monolithic AI application
+- Need to support multiple LLM providers
+- Want testable business logic
+- Building maintainable, long-term systems
+- Need clear boundaries between layers
+
+---
+
 ## 🗺️ Architecture Navigation Map
 
 ### By Role
 
 **Developers:**
-- Start: [Cost-Efficient Architecture](COST_EFFICIENT_ARCHITECTURE.md) - Learn when to use LLMs
+- Start: [Clean Architecture](CLEAN_ARCHITECTURE.md) - Learn code organization principles
+- Then: [Cost-Efficient Architecture](COST_EFFICIENT_ARCHITECTURE.md) - Learn when to use LLMs
 - Then: [System Architecture](SYSTEM_ARCHITECTURE.md) - Understand system design
 - Finally: [AI Testing Architecture](AI_TESTING_ARCHITECTURE.md) - Write tests
 
@@ -365,19 +422,21 @@ This document serves as the central index for all architecture guides in the AI 
 - Monitor: [Observability Architecture](OBSERVABILITY_ARCHITECTURE.md) - Audit logging
 
 **Architects:**
-- Read all 7 documents in order for complete understanding
+- Read all 8 documents in order for complete understanding
+- Start with Clean Architecture for code organization principles
 - Focus on integration points between documents
 
 ### By Task
 
 **Starting a new AI project:**
-1. [Cost-Efficient Architecture](COST_EFFICIENT_ARCHITECTURE.md) - Design cost-aware pipeline
-2. [System Architecture](SYSTEM_ARCHITECTURE.md) - Design overall system
-3. [Security Architecture](SECURITY_ARCHITECTURE.md) - Build security from start
-4. [Compliance Architecture](COMPLIANCE_ARCHITECTURE.md) - Privacy by design
-5. [Observability Architecture](OBSERVABILITY_ARCHITECTURE.md) - Instrument everything
-6. [AI Testing Architecture](AI_TESTING_ARCHITECTURE.md) - Set up testing
-7. [Metrics Guide](METRICS.md) - Define success metrics
+1. [Clean Architecture](CLEAN_ARCHITECTURE.md) - Organize code with proper layer separation
+2. [Cost-Efficient Architecture](COST_EFFICIENT_ARCHITECTURE.md) - Design cost-aware pipeline
+3. [System Architecture](SYSTEM_ARCHITECTURE.md) - Design overall system
+4. [Security Architecture](SECURITY_ARCHITECTURE.md) - Build security from start
+5. [Compliance Architecture](COMPLIANCE_ARCHITECTURE.md) - Privacy by design
+6. [Observability Architecture](OBSERVABILITY_ARCHITECTURE.md) - Instrument everything
+7. [AI Testing Architecture](AI_TESTING_ARCHITECTURE.md) - Set up testing
+8. [Metrics Guide](METRICS.md) - Define success metrics
 
 **Optimizing existing system:**
 1. [Metrics Guide](METRICS.md) - Identify bottlenecks
@@ -726,19 +785,21 @@ Includes:
 ## 🚀 Getting Started
 
 ### New to AI Architecture?
-1. Read [Cost-Efficient Architecture](COST_EFFICIENT_ARCHITECTURE.md) - Understand the cost-first mindset
-2. Skim [System Architecture](SYSTEM_ARCHITECTURE.md) - See the big picture
-3. Refer to other documents as needed
+1. Read [Clean Architecture](CLEAN_ARCHITECTURE.md) - Understand code organization principles
+2. Read [Cost-Efficient Architecture](COST_EFFICIENT_ARCHITECTURE.md) - Understand the cost-first mindset
+3. Skim [System Architecture](SYSTEM_ARCHITECTURE.md) - See the big picture
+4. Refer to other documents as needed
 
 ### Building a Production System?
-Read all 7 documents in order:
-1. Cost-Efficient → Design for cost efficiency
-2. System → Design overall architecture
-3. Security → Build security from start
-4. Compliance → Implement privacy by design
-5. Observability → Instrument everything
-6. Testing → Set up test infrastructure
-7. Metrics → Define success metrics
+Read all 8 documents in order:
+1. Clean Architecture → Organize code with proper layers
+2. Cost-Efficient → Design for cost efficiency
+3. System → Design overall architecture
+4. Security → Build security from start
+5. Compliance → Implement privacy by design
+6. Observability → Instrument everything
+7. Testing → Set up test infrastructure
+8. Metrics → Define success metrics
 
 ### Troubleshooting Existing System?
 1. [Metrics Guide](METRICS.md) - Identify what's wrong
@@ -773,11 +834,12 @@ Read all 7 documents in order:
 | [Security](SECURITY_ARCHITECTURE.md) | 2,085 | 81KB | Security infrastructure | Validation, auth, IDS, incident response |
 | [Compliance](COMPLIANCE_ARCHITECTURE.md) | 1,706 | 66KB | Compliance infrastructure | Consent, DSR, audit logs, data lifecycle |
 | [Metrics](METRICS.md) | 1,069 | 42KB | Metrics catalog | 60+ metrics with formulas and thresholds |
-| **Total** | **11,676** | **455KB** | **All aspects** | **Complete architecture** |
+| [Clean Architecture](CLEAN_ARCHITECTURE.md) | 2,100 | 82KB | Code organization | Entities, use cases, adapters, dependency inversion |
+| **Total** | **13,776** | **537KB** | **All aspects** | **Complete architecture** |
 
 ---
 
-**Version:** 3.0 (Comprehensive Index)
+**Version:** 4.0 (Added Clean Architecture)
 **Last Updated:** February 6, 2026
-**Total Architecture Guidance:** 11,676 lines across 7 documents
+**Total Architecture Guidance:** 13,776 lines across 8 documents
 **Status:** Active
